@@ -1,0 +1,8 @@
+// script.js
+
+function login() {
+    // You can perform form validation/authentication logic here if needed
+
+    // Redirect to GenderSelection.html after successful login
+    window.location.href = 'GenderSelection.html';
+}

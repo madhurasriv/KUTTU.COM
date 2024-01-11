@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Due Date</title>
+    <style>
+        /* Your styles here */
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>KUTTU.COM</h1>
+        <form id="dueDateForm">
+            <label for="dueDate">Select Due Date:</label>
+            <input type="date" id="dueDate" required>
+            <button type="button" class="btn" onclick="submitDueDate()">Submit Due Date</button>
+        </form>
+    </div>
+    
+    <script>
+        function submitDueDate() {
+            var dueDate = document.getElementById('dueDate').value;
+            alert('Due Date Selected: ' + dueDate);
+
+            // Redirect to Payment Window.html
+            window.location.href = 'Payment_Window.html';
+        }
+    </script>
+</body>
+</html>

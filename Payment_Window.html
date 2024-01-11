@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KUTTU.COM - Payment</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .input-section {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      background-color: #3498db;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>KUTTU.COM - Payment</h1>
+
+    <div class="input-section">
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" placeholder="Enter card number">
+    </div>
+
+    <div class="input-section">
+      <label for="expiryDate">Expiry Date:</label>
+      <input type="date" id="expiryDate">
+    </div>
+
+    <div class="input-section">
+      <label for="cvv">CVV:</label>
+      <input type="number" id="cvv" placeholder="Enter CVV">
+    </div>
+
+    <div class="input-section">
+      <label for="cardType">Card Type:</label>
+      <select id="cardType">
+        <option value="visa">Visa</option>
+        <option value="mastercard">MasterCard</option>
+        <option value="amex">American Express</option>
+      </select>
+    </div>
+
+    <div class="input-section">
+      <label for="upiId">UPI ID:</label>
+      <input type="text" id="upiId" placeholder="Enter UPI ID">
+    </div>
+
+    <div class="input-section">
+      <label for="bank">Select Bank:</label>
+      <select id="bank">
+        <option value="hdfc">HDFC Bank</option>
+        <option value="icici">ICICI Bank</option>
+        <option value="axis">Axis Bank</option>
+        <!-- Add more bank options as needed -->
+      </select>
+    </div>
+
+    <button onclick="processPayment()">Process Payment</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function processPayment() {
+      // Handle payment processing logic here
+
+      // Redirect to Payment_Confirmation.html
+      window.location.href = 'Payment_Confirmation.html';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailor and Customer</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #3498db; /* Set the background color to blue */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff; /* Set text color to white */
+    }
+
+    .input-section {
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column; /* Display each input section in a column */
+      color: #fff; /* Set text color to white */
+    }
+
+    label {
+      margin-bottom: 10px; /* Increase the gap between each line */
+      color: #fff; /* Set text color to white */
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #2980b9; /* Set button color to a darker blue */
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3498db; /* Darker blue on hover */
+    }
+
+    /* Added styles for the blue-colored columns */
+    .input-section {
+      border-left: 4px solid #fff; /* Set left border color to white */
+      padding-left: 15px;
+    }
+
+    /* Style for the design image */
+    .input-section img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Male's Dress Customization</h1>
+
+    <div class="input-section">
+      <label for="dressType">Choose the type of dress (Shirt/Pant/Kurta):</label>
+      <input type="text" id="dressType" placeholder="Enter dress type here">
+    </div>
+
+    <div class="input-section">
+      <label for="designChoice">Choose your design:</label>
+      <input type="text" id="designChoice" placeholder="Enter design choice here">
+      <img src="design_image_male.jpg" alt="Design Image">
+    </div>
+
+    <div class="input-section">
+      <label for="hip">Hip Measurement:</label>
+      <input type="number" id="hip" placeholder="Enter hip measurement in inches">
+    </div>
+
+    <div class="input-section">
+      <label for="shoulders">Shoulders Measurement:</label>
+      <input type="number" id="shoulders" placeholder="Enter shoulders measurement in inches">
+    </div>
+
+    <div class="input-section">
+      <label for="handLength">Hand Length Measurement:</label>
+      <input type="number" id="handLength" placeholder="Enter hand length measurement in inches">
+    </div>
+
+    <div class="input-section">
+      <label for="chest">Chest Measurement:</label>
+      <input type="number" id="chest" placeholder="Enter chest measurement in inches">
+    </div>
+
+    <button onclick="submitForm()">Submit</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function submitForm() {
+      // Handle form submission logic here
+
+      // Redirect to Due_Date.html
+      window.location.href = 'Due_Date.html';
+    }
+  </script>
+</body>
+</html>
